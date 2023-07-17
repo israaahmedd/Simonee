@@ -66,6 +66,13 @@ a {
     background-color: #000000e5;
     z-index:999;
  }
+ nav #menu{
+    display: none;
+ }
+ nav label{
+    color: #fff;
+ display: none;
+ }
 .background{
     background-image: url(imgs/intro-bg.jpg);
     background-position: center;
@@ -313,3 +320,101 @@ Line-height: 24px;
 footer a:hover p{
 color:var(--main-color);
 }
+
+/* media*/
+/* @media (max-width:1399.98px) {} */
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+    .about .about-area .about-text,
+    .about .about-area .about-info,
+    .services .services-area .item,
+    .resume .resume-area .item,
+    .resume .skils .skils-area .item,
+    .client-section .client-area .client {
+       width: 100%;
+    }
+    .portfolio .gallary .col:last-child {
+        margin-top: -150px;
+     }
+     .portfolio .gallary .col {
+        width: calc((100% - 30px) / 2);
+     }
+  }
+  @media (max-width: 767.98px) {
+    nav .nav-menu{
+      position: absolute;
+       top: 100%;
+       left: 0;
+       width: 100%;
+       text-align: center;
+       flex-direction: column;
+       background-color: #000;
+       /* display: none; */
+       max-height: 0;
+       overflow:hidden;
+       transition: 1s;
+       width: 100%;
+  
+    }
+    nav i{
+        display: none;
+     }
+    nav .nav-menu li {
+      margin-bottom:5px ;
+        width: 100%;
+        background-color: rgb(163, 163, 163);
+        display: block;
+        padding-block: 10px;
+     }
+    
+     nav label {
+        display: block;
+     }
+  
+     nav #menu:checked ~ .nav-menu {
+       
+        max-height: 1000px;
+     }
+    } 
+     html {
+        font-size: 13px;
+     }
+  
+     .about .counter .item {
+        width: calc((100% - 30px) / 2);
+     }
+  
+     .portfolio .gallary .col:last-child {
+        margin-top: -150px;
+     }
+  }
+  
+  @media (max-width: 575.98px) {
+     html {
+        font-size: 12px;
+     }
+  
+     .about .counter .item {
+        width: 100%;
+     }
+  
+     .services .services-area .item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+     }
+  
+     .services .services-area .item p {
+        width: unset;
+     }
+  
+     .portfolio .gallary .col:last-child {
+        margin-top: unset;
+     }
+  
+     .portfolio .gallary .col {
+        width: 100%;
+     }
+  } 
