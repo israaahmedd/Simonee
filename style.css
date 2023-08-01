@@ -308,6 +308,12 @@ Line-height: 24px;
   
 
 }
+.carousel-indicators [data-bs-target] {
+    width: 50;
+    height: 50;
+
+    background-color: var(--main-color);
+}
 
 .portfolio .layer{
    border-radius: 5px;
