@@ -34,7 +34,9 @@ a {
     padding: 0 1rem;
     margin: auto;
  } */
- 
+ .cursor-pointer{
+    cursor: pointer;
+ }
 
 @media screen and (min-width: 576px) {
     .container {
@@ -63,7 +65,7 @@ a {
  }
 
  nav{
-    background-color: #000000e5;
+    background-color: #000000b0;
     z-index:999;
  }
  nav #menu{
@@ -82,7 +84,7 @@ a {
 }
 .layer{
    
-   background-color: rgba(0, 0, 0, 0.586);
+   background-color: rgba(0, 0, 0, 0.452);
 }
 
 
@@ -97,9 +99,13 @@ Line-height: 83.2px;
 
 
 }
-#home{
+.home{
     color: var(--main-color);
 }
+.hover-color:hover{
+    color: var(--main-color);
+}
+
 .green-btn{
     color:var(--main-color);
     border-color:var(--main-color);
@@ -337,23 +343,26 @@ color:var(--main-color);
    {
     nav .nav-menu{
       position: absolute;
-       top: 100%;
-       left: 0;
+     left: 0%;
+   height: 90vmax;
+     top: 100%;
        width: 100%;
        text-align: center;
        flex-direction: column;
-       background-color: #000;
+       background-color: #000000;
        /* display: none; */
        max-height: 0;
        overflow:hidden;
        transition: 1s;
-       width: 100%;
+
   
     }
    
     nav .nav-menu li {
+        
+        background-color: #e8e8e8;
       margin-bottom:5px ;
-        width: 100%;
+      width: 100vh;
         background-color: rgb(163, 163, 163);
         display: block;
         padding-block: 10px;
@@ -362,9 +371,9 @@ color:var(--main-color);
      nav label {
         display: block;
      }
-  
+     
      nav #menu:checked ~ .nav-menu {
-       
+     overflow: hidden;
         max-height: 1000px;
      }
      html {

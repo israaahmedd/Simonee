@@ -22,35 +22,45 @@
 
 
 </head>
-<nav class="position-fixed d-flex align-content-center justify-content-between w-100 p-3 text-white">
-    <div class="w-25">
-        <img src="imgs/logo-light.png" alt="" class="w-25">
-    </div>
-    <label for="menu">
-        <i class="fa fa-bars fa-2xl"></i>
-    </label>
-    <input type="checkbox" id="menu">
+<nav class="position-fixed d-flex align-content-center justify-content-between w-100 p-3 ">
+    
+        <div >
+            <img src="imgs/logo-light.png" alt="" >
+        </div>
+        <label for="menu">
+            <i class="fa fa-bars fa-2xl cursor-pointer"></i>
+        </label>
+        <input type="checkbox" id="menu" class="">
+ 
+   
 
-    <ul class=" d-flex  align-items-center w-100 nav-menu justify-content-center fs-5 m-auto">
-        <li id="home" class="me-4 ">Home</li>
-        <li class="me-4">About</li>
-        <li class="me-4">What I do</li>
-        <li class="me-4">resume</li>
-        <li class="me-4">portfolio</li>
-        <li class="me-4">client</li>
-        <li class="me-4">contact</li>
+    <ul class=" d-flex  align-items-center w-100 nav-menu justify-content-center fs-5 text-white">
+      <a href="#home"><li class="me-4 home ">Home</li></a>  
+      <a href="#about" class="hover-color"><li class="me-4">About</li></a> 
+      <a href="#WhatDo" class="hover-color"><li class="me-4">What I do</li></a> 
+      <a href="#resume" class="hover-color"><li class="me-4">resume</li></a> 
+      <a href="#portfolio" class="hover-color"><li class="me-4">portfolio</li></a> 
+      <a href="#client" class="hover-color"><li class="me-4">client</li></a> 
+       <a href="#contact" class="hover-color"><li class="me-4">contact</li></a> 
 
     </ul>
-    <div class=" d-flex justify-content-end m-auto fs-5">
-        <i class="fa-brands fa-twitter pe-3"></i>
-        <i class="fa-brands fa-facebook-f pe-3"></i>
-        <i class="fa-brands fa-dribbble pe-3"></i>
+    <div class=" d-flex justify-content-end  fs-5  text-white">
+      <a href="https://twitter.com/home?lang=ar"> 
+         <i class="fa-brands fa-twitter pe-3 hover-color cursor-pointer" ></i>
+        </a>
+        <a href="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook-f pe-3 hover-color"></i>
+        </a>
+      <a href="https://dribbble.com/">
+        <i class="fa-brands fa-dribbble pe-3 hover-color"></i>
+      </a>
+        
 
     </div>
 </nav>
 
 <body>
-    <div class="background w-100">
+    <div class="background w-100"  id="home">
         <div class="layer w-100 h-100">
             <div class="  w-100 h-100 content text-white text-center d-flex flex-column align-items-center">
                 <div class="text m-auto">
@@ -62,7 +72,7 @@
                     </a>
                 </div>
 
-                <span class="arrow-down">
+                <span class="arrow-down curser-pointer">
                     <i class="fa-solid fa-chevron-down d-block fs-4"></i>
                 </span>
 
@@ -72,7 +82,7 @@
 
     </div>
     <!-- section 2 about-->
-    <section class="second-section w-100 mt-5 mb-5 h-auto">
+    <section class="second-section w-100 mt-5 mb-5 h-auto" id="about">
         <div class=" container h-100 w-100 ">
             <div
                 class="tittle position-relative text-center d-flex justify-content-center align-items-center mt-5 mb-5 ">
@@ -134,7 +144,7 @@
     </section>
 
     <!-- section 3 -->
-    <div class="section-serv w-100 mb-3">
+    <div class="section-serv w-100 mb-3" id="WhatDo">
         <div class="tittle position-relative text-center d-flex justify-content-center align-items-center mt-5 mb-5 ">
             <h2>SERVICES</h2>
             <h3 class="position-absolute">what i do</h3>
@@ -218,7 +228,7 @@
 
     </div>
     <!-- section 4 -->
-    <div class="section-sum mb-2">
+    <div class="section-sum mb-2" id="resume">
         <div class=" container ">
             <div
                 class="tittle position-relative text-center d-flex justify-content-center align-items-center mt-5 mb-5 ">
@@ -368,7 +378,7 @@
 
     <!-- section 5 //portfolio -->
 
-    <div class="portfolio pb-5">
+    <div class="portfolio pb-5" id="portfolio">
         <div class="container d-flex align-items-center flex-column">
             <div
                 class="tittle position-relative text-center d-flex justify-content-center align-items-center mt-5 mb-5 ">
@@ -389,6 +399,7 @@
                     <a href="#">photos</a>
                 </li>
             </ul>
+            
             <div class="row container-fluid mt-4">
                 <div class="col-4">
                     <div class="image position-relative mb-3">
@@ -543,7 +554,7 @@
 </div>
  </div> 
 </div> -->
-    <div class="container testmonial"style="height: 100vh;">
+    <div class="container testmonial"style="height: 100vh;" id="client">
         <div class="tittle position-relative text-center d-flex justify-content-center align-items-center mt-5 mb-5 ">
             <h2>TESTMONIAL</h2>
             <h3 class="position-absolute">Client Speak</h3>
@@ -688,7 +699,7 @@
 
 
     <!-- section 7 conection -->
-    <div class="section-con " style="height: 100vh;">
+    <div class="section-con " style="height: 100vh;" id="contact">
         <div class="container">
             <div
                 class="tittle position-relative text-center d-flex justify-content-center align-items-center mt-5 mb-5 ">
